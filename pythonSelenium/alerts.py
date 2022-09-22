@@ -14,9 +14,16 @@ driver.find_element(By.ID, "alertbtn").click()
 alert = driver.switch_to.alert
 alertText = alert.text
 print(alertText)
+print(alertText)
+print(alertText)
+
+
 assert name in alertText
 alert.accept()
 #alert.dismiss()
+
+assert name in alertText
+alert.accept()
 
 
 
