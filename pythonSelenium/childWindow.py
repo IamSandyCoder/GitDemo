@@ -17,3 +17,8 @@ driver.switch_to.window(windowsOpened[0])
 assert "Opening a new window" == driver.find_element(By.TAG_NAME, "h3").text
 
 
+driver.switch_to.window(windowsOpened[1])
+print(driver.find_element(By.TAG_NAME, "h3").text)
+driver.close()
+driver.switch_to.window(windowsOpened[0])
+assert "Opening a new window" == driver.find_element(By.TAG_NAME, "h3").text
